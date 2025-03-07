@@ -2,19 +2,26 @@
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String
+from ackermann_msgs.msg import AckermannDriveStamped
 
 class MinimalSubscriber(Node):
     def __init__(self):
         super().__init__('relay')
         self.subscription = self.create_subscription(
-                String,
+                AckermannDriveStamped,
                 'drive',
                 self.listener_cb,
                 10)
 
+        self.publisher = self.create_publisher(AckermannDriveStamped, 'drive_relay', 10)
+
     def listener_cb(self, msg):
-        self.get_logger().info('i heard "%s"' % msg.data)
+        msg.drive.speed = msg.drive.speed * 3
+        msg.drive.steering_angle = msg.drive.steering_angle * 3
+        
+        self.get_logger().info(f"speed: {msg.drive.speed}, steering_angle: {msg.drive.steering_angle}, relay: {msg}")    
+        self.publisher.publish(msg)
+
 
 def main(args=None):
     rclpy.init(args=args)

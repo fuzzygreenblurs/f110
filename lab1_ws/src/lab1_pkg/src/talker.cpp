@@ -3,28 +3,34 @@
 #include <memory>
 #include <string>
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
+#include "ackermann_msgs/msg/ackermann_drive_stamped.hpp"
 
 using namespace std::chrono_literals;
 
 class MinimalPublisher : public rclcpp::Node {
 	public:
 		MinimalPublisher() : Node("talker"), count_(0) {
-			publisher_ = this->create_publisher<std_msgs::msg::String>("drive", 10);
+			this->declare_parameter("v", 1.0);
+			this->declare_parameter("d", 0.0);
+			
+			publisher_ = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>("drive", 10);
+			
 		}
 
 		
 		void publish() {
 
-			auto msg = std_msgs::msg::String();
-			msg.data = "hello" + std::to_string(count_++);
-			RCLCPP_INFO(this->get_logger(), "publishing: '%s'", msg.data.c_str());
+			auto msg = ackermann_msgs::msg::AckermannDriveStamped();
+			msg.drive.speed = this->get_parameter("v").as_double();
+			msg.drive.steering_angle = this->get_parameter("d").as_double();
+			RCLCPP_INFO(this->get_logger(), "publish: speed=%f, angle=%f", msg.drive.speed, msg.drive.steering_angle);
+		
 			publisher_->publish(msg);
 		}
 
 	private:
 		size_t count_;
-		rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
+		rclcpp::Publisher<ackermann_msgs::msg::AckermannDriveStamped>::SharedPtr publisher_;
 		rclcpp::TimerBase::SharedPtr timer_;
 	
 };
