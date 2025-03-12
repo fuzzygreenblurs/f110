@@ -13,6 +13,8 @@ find_package(nav_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(Eigen3 REQUIRED)
 
+include_directories(include)
+
 add_executable(safety_node src/safety_node.cpp)
 
 
@@ -24,14 +26,26 @@ ament_target_dependencies(safety_node
 	nav_msgs
 )
 
-# link eigen as a system library
-# target_link_libraries: instructs linker to include this library when linking libraries
-target_link_libraries(safety_node Eigen3::Eigen)
-
 install(
 	TARGETS safety_node
 	DESTINATION lib/${PROJECT_NAME}
-	)
+)
+
+install(
+	DIRECTORY include/
+	DESTINATION include/${PROJECT_NAME}
+)
+
+ament_export_dependencies(rclcpp sensor_msgs)
+
+
+# link eigen as a system library
+# target_link_libraries: instructs linker to include this library when linking libraries
+target_link_libraries(
+	safety_node 
+	Eigen3::Eigen
+)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
