@@ -4,7 +4,7 @@
 using std::placeholders::_1;
 
 namespace aeb {
-	SafetyNode::SafetyNode() : rclcpp::Node("aeb::safety_node") {
+	SafetyNode::SafetyNode() : rclcpp::Node("aeb_safety_node") {
 		scan_subscription_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
 				"/scan", 10, 
 				std::bind(&SafetyNode::ingest_scan, this, _1)
