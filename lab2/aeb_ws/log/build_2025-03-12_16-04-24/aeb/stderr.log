@@ -1,0 +1,49 @@
+In file included from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:9:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krcpcpp[m[K’ has not been declared
+    9 | class SafetyNode : public [01;31m[Krcpcpp[m[K::Node {
+      |                           [01;31m[K^~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:9:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[KNode[m[K’
+    9 | class SafetyNode : public rcpcpp::[01;31m[KNode[m[K {
+      |                                   [01;31m[K^~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:10:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kpublic[m[K’
+   10 | [01;31m[Kpublic[m[K:
+      | [01;31m[K^~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:10:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kpublic[m[K’
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:9:40:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+    9 | class SafetyNode : public rcpcpp::Node [01;36m[K{[m[K
+      |                                        [01;36m[K^[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:13:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+   13 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:18:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+   18 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:8:24:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass aeb::SafetyNode[m[K’
+    8 | SafetyNode::SafetyNode([01;31m[K)[m[K : rclcpp::Node("aeb::safety_node") {
+      |                        [01;31m[K^[m[K
+In file included from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:9:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass aeb::SafetyNode[m[K’
+    9 | class [01;36m[KSafetyNode[m[K : public rcpcpp::Node {
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:15:78:[m[K [01;31m[Kerror: [m[Kinvalid use of incomplete type ‘[01m[Kclass aeb::SafetyNode[m[K’
+   15 | void SafetyNode::ingest_scan(const sensor_msgs::msg::LaserScan::SharedPtr msg[01;31m[K)[m[K {
+      |                                                                              [01;31m[K^[m[K
+In file included from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:9:7:[m[K [01;36m[Knote: [m[Kforward declaration of ‘[01m[Kclass aeb::SafetyNode[m[K’
+    9 | class [01;36m[KSafetyNode[m[K : public rcpcpp::Node {
+      |       [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In function ‘[01m[Kint aeb::main(int, char**)[m[K’:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:21:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Knode[m[K’
+   21 |         rclcpp::spin[34m[K([m[Kstd::make_shared<SafetyNode>[01;31m[K [m[K[32m[Knode[m[K;
+      |                     [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~~~~[m[K
+      |                                                  [32m[K)[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K At global scope:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:25:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   25 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:6:15:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+    6 | namespace aeb [01;36m[K{[m[K
+      |               [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:76: CMakeFiles/safety_node.dir/src/safety_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

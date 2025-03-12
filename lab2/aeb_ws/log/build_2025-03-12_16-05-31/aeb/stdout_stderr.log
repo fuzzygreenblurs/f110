@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target safety_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In function ‘[01m[Kint aeb::main(int, char**)[m[K’:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:21:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Knode[m[K’
+   21 |         rclcpp::spin[34m[K([m[Kstd::make_shared<SafetyNode>[01;31m[K [m[K[32m[Knode[m[K;
+      |                     [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~~~~[m[K
+      |                                                  [32m[K)[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K At global scope:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:25:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+   25 | }
+      |  [01;31m[K^[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:6:15:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+    6 | namespace aeb [01;36m[K{[m[K
+      |               [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:76: CMakeFiles/safety_node.dir/src/safety_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
