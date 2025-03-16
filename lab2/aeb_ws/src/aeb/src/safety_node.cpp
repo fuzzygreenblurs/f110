@@ -2,7 +2,7 @@
 
 using std::placeholders::_1;
 
-namespace aeb {
+namespace AEB {
 	SafetyNode::SafetyNode() : rclcpp::Node("aeb_safety_node") {
 		scan_subscription_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
 			"/scan", 10, 
@@ -76,7 +76,7 @@ namespace aeb {
 
 int main(int argc, char* argv[]) {
 	rclcpp::init(argc, argv);
-	rclcpp::spin(std::make_shared<aeb::SafetyNode>());
+	rclcpp::spin(std::make_shared<AEB::SafetyNode>());
 	rclcpp::shutdown();
 
 	return 0;

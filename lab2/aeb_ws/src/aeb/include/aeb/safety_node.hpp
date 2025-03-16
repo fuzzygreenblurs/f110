@@ -8,7 +8,7 @@
 #include "nav_msgs/msg/odometry.hpp"
 #include "ackermann_msgs/msg/ackermann_drive_stamped.hpp"
 
-namespace aeb {
+namespace AEB {
 
 class SafetyNode : public rclcpp::Node {
 public:
