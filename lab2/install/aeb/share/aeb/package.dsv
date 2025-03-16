@@ -1,0 +1,5 @@
+source;share/aeb/local_setup.bash
+source;share/aeb/local_setup.dsv
+source;share/aeb/local_setup.ps1
+source;share/aeb/local_setup.sh
+source;share/aeb/local_setup.zsh

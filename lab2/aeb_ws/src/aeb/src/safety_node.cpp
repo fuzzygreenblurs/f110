@@ -5,16 +5,16 @@ using std::placeholders::_1;
 namespace AEB {
 	SafetyNode::SafetyNode() : rclcpp::Node("aeb_safety_node") {
 		scan_subscription_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
-			"/scan", 10, 
+			SCAN_TOPIC, 10, 
 			std::bind(&SafetyNode::ingest_scan, this, _1)
 		);
 
 		odom_subscription_ = this->create_subscription<nav_msgs::msg::Odometry>(
-			"/ego_racecar/odom", 10,
+			ODOMETRY_TOPIC, 10,
 			std::bind(&SafetyNode::ingest_odom, this, _1)
 		);
 
-		publisher_ = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>("drive_funnel", 10);
+		publisher_ = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>(FUNNEL_TOPIC, 10);
 	}
 
 	void SafetyNode::ingest_scan(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
@@ -36,20 +36,20 @@ namespace AEB {
 
 	void SafetyNode::ingest_odom(const nav_msgs::msg::Odometry::SharedPtr msg) {
 		speed_ = msg->twist.twist.linear.x;
-		double heading_ = convert_to_yaw(msg);	
+		heading_ = convert_to_yaw(msg);	
 		
 		RCLCPP_INFO(this->get_logger(), "odom.longitudinal_velocty: %f", msg->twist.twist.linear.x);
 	}
 
-	double convert_to_yaw(const nav_msgs::msg::Odometry::SharedPtr msg) {
+	float convert_to_yaw(const nav_msgs::msg::Odometry::SharedPtr msg) {
 		// quaternion to yaw
-		double qw = msg->pose.pose.orientation.w;
-		double qx = msg->pose.pose.orientation.x;
-		double qy = msg->pose.pose.orientation.y;
-		double qz = msg->pose.pose.orientation.z;
+		float qw = msg->pose.pose.orientation.w;
+		float qx = msg->pose.pose.orientation.x;
+		float qy = msg->pose.pose.orientation.y;
+		float qz = msg->pose.pose.orientation.z;
 
 
-		double yaw = std::atan2(
+		float yaw = std::atan2(
 			2.0 * ((qw * qx) + (qy * qz)),
 			1.0 - (2.0 * (qx * qx) + (qy * qy))
 		);
@@ -57,10 +57,10 @@ namespace AEB {
 		return yaw;
 	}
 
-	void is_within_threshold() {
-		// calculate ttc along each beam
-			
-		// if any(within_threshhold), return true
+	void SafetyNode::is_within_threshold() {
+		if(ttc_map_.minCoeff() <= AEB_MIN_RADIUS) {
+			brake();
+		}
 	}
 
 	void SafetyNode::brake() {

@@ -19,16 +19,23 @@ private:
 	void ingest_odom(const nav_msgs::msg::Odometry::SharedPtr msg);
 	void brake();
 	void is_within_threshold();
-	double convert_to_yaw(const nav_msgs::msg::Odometry::SharedPtr msg);
+	float convert_to_yaw(const nav_msgs::msg::Odometry::SharedPtr msg);
 
 	rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_subscription_;
 	rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscription_;
 	rclcpp::Publisher<ackermann_msgs::msg::AckermannDriveStamped>::SharedPtr publisher_;
+
 	static constexpr double EPSILON = 0.0001f;	
 	static constexpr size_t BEAM_COUNT = 1080;
-	double speed_;
-	double heading_;
+	static constexpr float AEB_MIN_RADIUS = 5;
 	Eigen::ArrayXf ttc_map_;	
+
+	float speed_;
+	float heading_;
+	
+	static constexpr char* SCAN_TOPIC = "/scan";
+	static constexpr char* ODOMETRY_TOPIC = "/ego_racecar/odom";
+	static constexpr char* FUNNEL_TOPIC = "/drive_funnel";
 };
 
 }

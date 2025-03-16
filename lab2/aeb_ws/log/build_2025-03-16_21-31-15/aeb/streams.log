@@ -1,0 +1,57 @@
+[0.006s] Invoking command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb -- -j6 -l6
+[0.028s] [35m[1mConsolidate compiler generated dependencies of target safety_node[0m
+[0.038s] [ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[0.560s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:214[m[K,
+[0.560s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[0.560s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+[0.560s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[0.560s] [01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:[m[K In function ‘[01m[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char][m[K’:
+[0.560s] [01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid* memcpy(void*, const void*, size_t)[m[K’ copying an object of non-trivial type ‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} from an array of ‘[01m[Kconst int8_t[m[K’ {aka ‘[01m[Kconst signed char[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess-Wclass-memaccess]8;;[m[K]
+[0.560s]  1671 |   [01;35m[Kmemcpy(&res, from, sizeof(Packet4c))[m[K;
+[0.560s]       |   [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.560s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:172[m[K,
+[0.560s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[0.560s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+[0.560s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[0.560s] [01m[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} declared here
+[0.560s]   159 | struct [01;36m[Keigen_packet_wrapper[m[K
+[0.560s]       |        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.560s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:214[m[K,
+[0.561s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[0.561s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+[0.561s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[0.561s] [01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:[m[K In function ‘[01m[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char][m[K’:
+[0.561s] [01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid* memcpy(void*, const void*, size_t)[m[K’ copying an object of non-trivial type ‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} from an array of ‘[01m[Kconst int8_t[m[K’ {aka ‘[01m[Kconst signed char[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess-Wclass-memaccess]8;;[m[K]
+[0.561s]  1716 |   [01;35m[Kmemcpy(&res, from, sizeof(Packet4c))[m[K;
+[0.561s]       |   [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.561s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:172[m[K,
+[0.561s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[0.561s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+[0.561s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[0.561s] [01m[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} declared here
+[0.561s]   159 | struct [01;36m[Keigen_packet_wrapper[m[K
+[0.561s]       |        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[1.868s] In file included from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[1.868s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:[m[K At global scope:
+[1.868s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:36:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kconstexpr[m[K’ static data member ‘[01m[Kttc_map_[m[K’ must have an initializer
+[1.868s]    36 |         Eigen::ArrayXf [01;31m[Kttc_map_[m[K;
+[1.868s]       |                        [01;31m[K^~~~~~~~[m[K
+[1.868s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:36:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst ArrayXf AEB::SafetyNode::ttc_map_[m[K’ conflicts with a previous declaration
+[1.868s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:31:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[KEigen::ArrayXf AEB::SafetyNode::ttc_map_[m[K’
+[1.868s]    31 |         Eigen::ArrayXf [01;36m[Kttc_map_[m[K;
+[1.868s]       |                        [01;36m[K^~~~~~~~[m[K
+[1.936s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid AEB::SafetyNode::ingest_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.936s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:39:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kheading_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.936s]    39 |                 double [01;35m[Kheading_[m[K = convert_to_yaw(msg);
+[1.936s]       |                        [01;35m[K^~~~~~~~[m[K
+[1.936s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid AEB::SafetyNode::is_within_threshold()[m[K’:
+[1.936s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:62:32:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[1.937s]    62 |                         brake()
+[1.937s]       |                                [01;31m[K^[m[K
+[1.937s]       |                                [32m[K;[m[K
+[1.937s]    63 |                 [32m[K}[m[K
+[1.937s]       |                 [32m[K~[m[K               
+[3.907s] gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:76: CMakeFiles/safety_node.dir/src/safety_node.cpp.o] Error 1
+[3.907s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2
+[3.907s] gmake: *** [Makefile:146: all] Error 2
+[3.908s] Invoked command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb -- -j6 -l6
