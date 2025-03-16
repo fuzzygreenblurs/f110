@@ -272,7 +272,10 @@ SITE:STRING=slambox-01
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so
+
+//The directory containing a CMake configuration file for ackermann_msgs.
+ackermann_msgs_DIR:PATH=/opt/ros/humble/share/ackermann_msgs/cmake
 
 //Value Computed by CMake
 aeb_BINARY_DIR:STATIC=/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb

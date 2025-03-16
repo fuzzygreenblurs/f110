@@ -10,6 +10,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(ackermann_msgs REQUIRED)
 
 #include header files directory
 include_directories(include)
@@ -22,6 +23,7 @@ ament_target_dependencies(safety_node
 	rclcpp
 	sensor_msgs
 	nav_msgs
+	ackermann_msgs
 )
 
 # install the executable

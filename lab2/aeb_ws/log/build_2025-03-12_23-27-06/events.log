@@ -1,0 +1,109 @@
+[0.000000] (-) TimerEvent: {}
+[0.000092] (aeb) JobQueued: {'identifier': 'aeb', 'dependencies': OrderedDict()}
+[0.000523] (aeb) JobStarted: {'identifier': 'aeb'}
+[0.004710] (aeb) JobProgress: {'identifier': 'aeb', 'progress': 'cmake'}
+[0.005383] (aeb) JobProgress: {'identifier': 'aeb', 'progress': 'build'}
+[0.005411] (aeb) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb', '--', '-j6', '-l6'], 'cwd': '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akhilsankar'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akhilsankar'), ('OLDPWD', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1603'), ('SYSTEMD_EXEC_PID', '28359'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '28936'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akhilsankar'), ('JOURNAL_STREAM', '8:145800'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akhilsankar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/akhilsankar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/slambox-01:@/tmp/.ICE-unix/28331,unix/slambox-01:/tmp/.ICE-unix/28331'), ('INVOCATION_ID', '5e0c104129cd4b3aa20855135d1e4701'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42a3522d-be58-4b60-90b4-8d8990c8efa1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb:/opt/ros/humble')]), 'shell': False}
+[0.032516] (aeb) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target safety_node\x1b[0m\n'}
+[0.043341] (aeb) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o\x1b[0m\n'}
+[0.101172] (-) TimerEvent: {}
+[0.204428] (-) TimerEvent: {}
+[0.306259] (-) TimerEvent: {}
+[0.410267] (-) TimerEvent: {}
+[0.512656] (-) TimerEvent: {}
+[0.613568] (-) TimerEvent: {}
+[0.718507] (-) TimerEvent: {}
+[0.821834] (-) TimerEvent: {}
+[0.927115] (-) TimerEvent: {}
+[1.027912] (-) TimerEvent: {}
+[1.133224] (-) TimerEvent: {}
+[1.234276] (-) TimerEvent: {}
+[1.335124] (-) TimerEvent: {}
+[1.397620] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid aeb::SafetyNode::ingest_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.397793] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:48:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kyaw\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.397830] (aeb) StderrLine: {'line': b'   48 |                 double \x1b[01;35m\x1b[Kyaw\x1b[m\x1b[K = std::atan2(\n'}
+[1.397858] (aeb) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.436430] (-) TimerEvent: {}
+[1.538334] (-) TimerEvent: {}
+[1.643598] (-) TimerEvent: {}
+[1.746188] (-) TimerEvent: {}
+[1.847500] (-) TimerEvent: {}
+[1.949243] (-) TimerEvent: {}
+[2.050231] (-) TimerEvent: {}
+[2.154022] (-) TimerEvent: {}
+[2.259316] (-) TimerEvent: {}
+[2.362378] (-) TimerEvent: {}
+[2.466010] (-) TimerEvent: {}
+[2.570437] (-) TimerEvent: {}
+[2.674341] (-) TimerEvent: {}
+[2.779628] (-) TimerEvent: {}
+[2.882104] (-) TimerEvent: {}
+[2.983848] (-) TimerEvent: {}
+[3.086435] (-) TimerEvent: {}
+[3.191704] (-) TimerEvent: {}
+[3.295065] (-) TimerEvent: {}
+[3.397743] (-) TimerEvent: {}
+[3.503149] (-) TimerEvent: {}
+[3.608461] (-) TimerEvent: {}
+[3.710378] (-) TimerEvent: {}
+[3.813620] (-) TimerEvent: {}
+[3.915178] (-) TimerEvent: {}
+[4.016800] (-) TimerEvent: {}
+[4.117271] (-) TimerEvent: {}
+[4.218448] (-) TimerEvent: {}
+[4.323814] (-) TimerEvent: {}
+[4.426377] (-) TimerEvent: {}
+[4.531693] (-) TimerEvent: {}
+[4.632443] (-) TimerEvent: {}
+[4.734384] (-) TimerEvent: {}
+[4.839628] (-) TimerEvent: {}
+[4.941296] (-) TimerEvent: {}
+[5.043349] (-) TimerEvent: {}
+[5.143906] (-) TimerEvent: {}
+[5.244792] (-) TimerEvent: {}
+[5.345739] (-) TimerEvent: {}
+[5.451010] (-) TimerEvent: {}
+[5.556291] (-) TimerEvent: {}
+[5.657086] (-) TimerEvent: {}
+[5.758355] (-) TimerEvent: {}
+[5.863610] (-) TimerEvent: {}
+[5.968941] (-) TimerEvent: {}
+[6.070041] (-) TimerEvent: {}
+[6.170425] (-) TimerEvent: {}
+[6.275689] (-) TimerEvent: {}
+[6.376175] (-) TimerEvent: {}
+[6.450975] (aeb) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable safety_node\x1b[0m\n'}
+[6.476781] (-) TimerEvent: {}
+[6.577498] (-) TimerEvent: {}
+[6.678460] (-) TimerEvent: {}
+[6.780571] (-) TimerEvent: {}
+[6.847227] (aeb) StdoutLine: {'line': b'[100%] Built target safety_node\n'}
+[6.854797] (aeb) CommandEnded: {'returncode': 0}
+[6.855728] (aeb) JobProgress: {'identifier': 'aeb', 'progress': 'install'}
+[6.861196] (aeb) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb'], 'cwd': '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akhilsankar'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akhilsankar'), ('OLDPWD', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1603'), ('SYSTEMD_EXEC_PID', '28359'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '28936'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akhilsankar'), ('JOURNAL_STREAM', '8:145800'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akhilsankar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/akhilsankar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/slambox-01:@/tmp/.ICE-unix/28331,unix/slambox-01:/tmp/.ICE-unix/28331'), ('INVOCATION_ID', '5e0c104129cd4b3aa20855135d1e4701'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42a3522d-be58-4b60-90b4-8d8990c8efa1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb:/opt/ros/humble')]), 'shell': False}
+[6.864818] (aeb) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.865155] (aeb) StdoutLine: {'line': b'-- Installing: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/safety_node\n'}
+[6.875491] (aeb) StdoutLine: {'line': b'-- Set runtime path of "/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/safety_node" to ""\n'}
+[6.875597] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb\n'}
+[6.875644] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/aeb\n'}
+[6.875755] (aeb) StdoutLine: {'line': b'-- Installing: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/aeb/.safety_node.hpp.swp\n'}
+[6.875862] (aeb) StdoutLine: {'line': b'-- Installing: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/aeb/safety_node.hpp\n'}
+[6.875995] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/ament_index/resource_index/package_run_dependencies/aeb\n'}
+[6.876081] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/ament_index/resource_index/parent_prefix_path/aeb\n'}
+[6.876203] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/environment/ament_prefix_path.sh\n'}
+[6.876240] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/environment/ament_prefix_path.dsv\n'}
+[6.876266] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/environment/path.sh\n'}
+[6.876302] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/environment/path.dsv\n'}
+[6.876386] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/local_setup.bash\n'}
+[6.876535] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/local_setup.sh\n'}
+[6.876568] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/local_setup.zsh\n'}
+[6.876593] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/local_setup.dsv\n'}
+[6.876617] (aeb) StdoutLine: {'line': b'-- Installing: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/package.dsv\n'}
+[6.876654] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/ament_index/resource_index/packages/aeb\n'}
+[6.876680] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/cmake/aebConfig.cmake\n'}
+[6.876704] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/cmake/aebConfig-version.cmake\n'}
+[6.876732] (aeb) StdoutLine: {'line': b'-- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/package.xml\n'}
+[6.878213] (aeb) CommandEnded: {'returncode': 0}
+[6.880757] (-) TimerEvent: {}
+[6.886897] (aeb) JobEnded: {'identifier': 'aeb', 'rc': 0}
+[6.887360] (-) EventReactorShutdown: {}

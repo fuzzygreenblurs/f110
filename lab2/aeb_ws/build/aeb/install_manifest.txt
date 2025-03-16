@@ -1,4 +1,5 @@
 /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/safety_node
+/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/aeb/.safety_node.hpp.swp
 /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/aeb/safety_node.hpp
 /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/ament_index/resource_index/package_run_dependencies/aeb
 /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/ament_index/resource_index/parent_prefix_path/aeb

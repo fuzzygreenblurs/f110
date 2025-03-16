@@ -1,0 +1,15 @@
+[0.009s] Invoking command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb -- -j6 -l6
+[0.059s] [35m[1mConsolidate compiler generated dependencies of target safety_node[0m
+[0.077s] [ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[1.739s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid aeb::SafetyNode::ingest_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.739s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:41:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kheading_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.739s]    41 |                 double [01;35m[Kheading_[m[K = convert_to_yaw(msg);
+[1.739s]       |                        [01;35m[K^~~~~~~~[m[K
+[6.974s] [100%] [32m[1mLinking CXX executable safety_node[0m
+[7.311s] /usr/bin/ld: CMakeFiles/safety_node.dir/src/safety_node.cpp.o: in function `aeb::SafetyNode::ingest_odom(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >)':
+[7.312s] safety_node.cpp:(.text+0x854): undefined reference to `aeb::SafetyNode::convert_to_yaw(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >)'
+[7.368s] collect2: error: ld returned 1 exit status
+[7.369s] gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:191: safety_node] Error 1
+[7.369s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2
+[7.369s] gmake: *** [Makefile:146: all] Error 2
+[7.371s] Invoked command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb -- -j6 -l6

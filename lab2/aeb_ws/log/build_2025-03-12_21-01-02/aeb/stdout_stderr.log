@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target safety_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid aeb::SafetyNode::ingest_scan(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:27:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+   27 |                 for[34m[K([m[Ksize_t i=0; i < msg->ranges.size(); i++[01;31m[K [m[K[32m[K{[m[K
+      |                    [34m[K~[m[K                                       [01;31m[K^[m[K[32m[K~[m[K
+      |                                                            [32m[K)[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:29:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kneam_angle[m[K’ was not declared in this scope; did you mean ‘[01m[Kbeam_angle[m[K’?
+   29 |                         double relative_angle = [01;31m[Kneam_angle[m[K - heading_;
+      |                                                 [01;31m[K^~~~~~~~~~[m[K
+      |                                                 [32m[Kbeam_angle[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:28:32:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kbeam_angle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   28 |                         double [01;35m[Kbeam_angle[m[K = msg->angle_min + ((msg->angle_increment) * i);
+      |                                [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid aeb::SafetyNode::ingest_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:40:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_[m[K’ was not declared in this scope
+   40 |                 [01;31m[Kodom_[m[K = msg;
+      |                 [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:76: CMakeFiles/safety_node.dir/src/safety_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

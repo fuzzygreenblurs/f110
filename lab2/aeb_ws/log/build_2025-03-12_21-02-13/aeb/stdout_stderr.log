@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target safety_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid aeb::SafetyNode::ingest_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:40:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_[m[K’ was not declared in this scope
+   40 |                 [01;31m[Kodom_[m[K = msg;
+      |                 [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:76: CMakeFiles/safety_node.dir/src/safety_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

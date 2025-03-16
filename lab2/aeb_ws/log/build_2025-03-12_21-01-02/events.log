@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.000148] (aeb) JobQueued: {'identifier': 'aeb', 'dependencies': OrderedDict()}
+[0.000182] (aeb) JobStarted: {'identifier': 'aeb'}
+[0.004935] (aeb) JobProgress: {'identifier': 'aeb', 'progress': 'cmake'}
+[0.005866] (aeb) JobProgress: {'identifier': 'aeb', 'progress': 'build'}
+[0.005895] (aeb) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb', '--', '-j6', '-l6'], 'cwd': '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akhilsankar'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akhilsankar'), ('OLDPWD', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1603'), ('SYSTEMD_EXEC_PID', '28359'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '28936'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akhilsankar'), ('JOURNAL_STREAM', '8:145800'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akhilsankar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/akhilsankar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/slambox-01:@/tmp/.ICE-unix/28331,unix/slambox-01:/tmp/.ICE-unix/28331'), ('INVOCATION_ID', '5e0c104129cd4b3aa20855135d1e4701'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:42a3522d-be58-4b60-90b4-8d8990c8efa1'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb:/opt/ros/humble')]), 'shell': False}
+[0.044475] (aeb) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target safety_node\x1b[0m\n'}
+[0.059149] (aeb) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o\x1b[0m\n'}
+[0.099713] (-) TimerEvent: {}
+[0.200202] (-) TimerEvent: {}
+[0.300929] (-) TimerEvent: {}
+[0.401771] (-) TimerEvent: {}
+[0.502735] (-) TimerEvent: {}
+[0.603896] (-) TimerEvent: {}
+[0.704484] (-) TimerEvent: {}
+[0.804849] (-) TimerEvent: {}
+[0.905267] (-) TimerEvent: {}
+[1.005810] (-) TimerEvent: {}
+[1.106470] (-) TimerEvent: {}
+[1.207373] (-) TimerEvent: {}
+[1.308317] (-) TimerEvent: {}
+[1.408698] (-) TimerEvent: {}
+[1.509138] (-) TimerEvent: {}
+[1.609673] (-) TimerEvent: {}
+[1.698123] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid aeb::SafetyNode::ingest_scan(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.698375] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:27:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.698410] (aeb) StderrLine: {'line': b'   27 |                 for\x1b[34m\x1b[K(\x1b[m\x1b[Ksize_t i=0; i < msg->ranges.size(); i++\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K{\x1b[m\x1b[K\n'}
+[1.698439] (aeb) StderrLine: {'line': b'      |                    \x1b[34m\x1b[K~\x1b[m\x1b[K                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[1.698464] (aeb) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[1.703424] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:29:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kneam_angle\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kbeam_angle\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.703567] (aeb) StderrLine: {'line': b'   29 |                         double relative_angle = \x1b[01;31m\x1b[Kneam_angle\x1b[m\x1b[K - heading_;\n'}
+[1.703613] (aeb) StderrLine: {'line': b'      |                                                 \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.703645] (aeb) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[Kbeam_angle\x1b[m\x1b[K\n'}
+[1.703753] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:28:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kbeam_angle\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.703805] (aeb) StderrLine: {'line': b'   28 |                         double \x1b[01;35m\x1b[Kbeam_angle\x1b[m\x1b[K = msg->angle_min + ((msg->angle_increment) * i);\n'}
+[1.703836] (aeb) StderrLine: {'line': b'      |                                \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.709777] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid aeb::SafetyNode::ingest_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.709870] (-) TimerEvent: {}
+[1.709937] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:40:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kodom_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.709976] (aeb) StderrLine: {'line': b'   40 |                 \x1b[01;31m\x1b[Kodom_\x1b[m\x1b[K = msg;\n'}
+[1.710005] (aeb) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.812723] (-) TimerEvent: {}
+[1.913329] (-) TimerEvent: {}
+[2.014086] (-) TimerEvent: {}
+[2.115029] (-) TimerEvent: {}
+[2.215702] (-) TimerEvent: {}
+[2.316082] (-) TimerEvent: {}
+[2.416589] (-) TimerEvent: {}
+[2.517263] (-) TimerEvent: {}
+[2.618126] (-) TimerEvent: {}
+[2.718923] (-) TimerEvent: {}
+[2.820098] (-) TimerEvent: {}
+[2.920551] (-) TimerEvent: {}
+[3.022146] (-) TimerEvent: {}
+[3.123127] (-) TimerEvent: {}
+[3.223560] (-) TimerEvent: {}
+[3.323904] (-) TimerEvent: {}
+[3.424350] (-) TimerEvent: {}
+[3.524680] (-) TimerEvent: {}
+[3.625282] (-) TimerEvent: {}
+[3.725895] (-) TimerEvent: {}
+[3.757758] (aeb) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:76: CMakeFiles/safety_node.dir/src/safety_node.cpp.o] Error 1\n'}
+[3.757973] (aeb) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2\n'}
+[3.758092] (aeb) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.760017] (aeb) CommandEnded: {'returncode': 2}
+[3.766695] (aeb) JobEnded: {'identifier': 'aeb', 'rc': 2}
+[3.768355] (-) EventReactorShutdown: {}

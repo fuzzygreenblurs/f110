@@ -1,0 +1,34 @@
+[0.007s] Invoking command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb -- -j6 -l6
+[0.032s] [35m[1mConsolidate compiler generated dependencies of target safety_node[0m
+[0.043s] [ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[1.397s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid aeb::SafetyNode::ingest_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.397s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:48:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kyaw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.397s]    48 |                 double [01;35m[Kyaw[m[K = std::atan2(
+[1.397s]       |                        [01;35m[K^~~[m[K
+[6.451s] [100%] [32m[1mLinking CXX executable safety_node[0m
+[6.847s] [100%] Built target safety_node
+[6.854s] Invoked command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb -- -j6 -l6
+[6.861s] Invoking command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb
+[6.864s] -- Install configuration: ""
+[6.865s] -- Installing: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/safety_node
+[6.875s] -- Set runtime path of "/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/safety_node" to ""
+[6.875s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb
+[6.875s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/aeb
+[6.875s] -- Installing: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/aeb/.safety_node.hpp.swp
+[6.875s] -- Installing: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/lib/aeb/aeb/safety_node.hpp
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/ament_index/resource_index/package_run_dependencies/aeb
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/ament_index/resource_index/parent_prefix_path/aeb
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/environment/ament_prefix_path.sh
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/environment/ament_prefix_path.dsv
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/environment/path.sh
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/environment/path.dsv
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/local_setup.bash
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/local_setup.sh
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/local_setup.zsh
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/local_setup.dsv
+[6.876s] -- Installing: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/package.dsv
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/ament_index/resource_index/packages/aeb
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/cmake/aebConfig.cmake
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/cmake/aebConfig-version.cmake
+[6.876s] -- Up-to-date: /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb/share/aeb/package.xml
+[6.878s] Invoked command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb
