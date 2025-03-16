@@ -25,7 +25,7 @@ private:
 	rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscription_;
 	rclcpp::Publisher<ackermann_msgs::msg::AckermannDriveStamped>::SharedPtr publisher_;
 	
-	const size_t BEAM_COUNT 1080;
+	static const size_t BEAM_COUNT = 1080;
 	double speed_;
 	double heading_;
 	Eigen::Vector<double, BEAM_COUNT> projected_range_rates_;

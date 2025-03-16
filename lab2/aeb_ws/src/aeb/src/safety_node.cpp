@@ -18,20 +18,16 @@ namespace aeb {
 	}
 
 	void SafetyNode::ingest_scan(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
-		// c++ vectors can be cleared without reallocating/resizing
-		// we want to clear the old projection and handle the incoming one
+		Eigen::VectorXd relative_angles(msg->ranges.size());
+		Eigen::VectorXd range_rates(msg->ranges.size());
 		
-		projected_range_rates_.clear();
-		projected_range_rates_.resize(msg->ranges.size());
-
-		for(size_t i=0; i < msg->ranges.size(); i++) {
-			double beam_angle = msg->angle_min + ((msg->angle_increment) * i);
-			double relative_angle = beam_angle - heading_;
-			double range_rate = speed_ * std::cos(relative_angle);
-
-			projected_range_rates_[i] = range_rate;
-		}
-
+		relative_angles = Eigen::VectorXd::LinSpaced(
+			msg->ranges.size(),
+			msg->angle_min,
+			msg->angle_min + (msg->angle_increment * (msg->ranges.size() - 1)) - heading_
+		);
+		
+		range_rates = speed_ * relative_angles.array().cos(); 
 
 		RCLCPP_INFO(this->get_logger(), "scan.angle_min: %fi", msg->angle_min);
 	}
@@ -61,9 +57,7 @@ namespace aeb {
 
 	void is_within_threshold() {
 		// calculate ttc along each beam
-		
-
-
+			
 		// if any(within_threshhold), return true
 	}
 
