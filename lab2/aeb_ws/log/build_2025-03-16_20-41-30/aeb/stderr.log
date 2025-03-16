@@ -1,0 +1,92 @@
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:214[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:[m[K In function ‘[01m[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid* memcpy(void*, const void*, size_t)[m[K’ copying an object of non-trivial type ‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} from an array of ‘[01m[Kconst int8_t[m[K’ {aka ‘[01m[Kconst signed char[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess-Wclass-memaccess]8;;[m[K]
+ 1671 |   [01;35m[Kmemcpy(&res, from, sizeof(Packet4c))[m[K;
+      |   [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:172[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} declared here
+  159 | struct [01;36m[Keigen_packet_wrapper[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:214[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:[m[K In function ‘[01m[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid* memcpy(void*, const void*, size_t)[m[K’ copying an object of non-trivial type ‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} from an array of ‘[01m[Kconst int8_t[m[K’ {aka ‘[01m[Kconst signed char[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess-Wclass-memaccess]8;;[m[K]
+ 1716 |   [01;35m[Kmemcpy(&res, from, sizeof(Packet4c))[m[K;
+      |   [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:172[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} declared here
+  159 | struct [01;36m[Keigen_packet_wrapper[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid aeb::SafetyNode::ingest_scan(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:33:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kranges_map[m[K’ was not declared in this scope; did you mean ‘[01m[Kranges[m[K’?
+   33 |                 Eigen::ArrayXf ttc_map = [01;31m[Kranges_map[m[K.array();
+      |                                          [01;31m[K^~~~~~~~~~[m[K
+      |                                          [32m[Kranges[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid aeb::SafetyNode::ingest_odom(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:43:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kheading_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   43 |                 double [01;35m[Kheading_[m[K = convert_to_yaw(msg);
+      |                        [01;35m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:164[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Matrix<double, 1080, 1, 0, 1080, 1>; Src = Eigen::CwiseNullaryOp<Eigen::internal::linspaced_op<float>, Eigen::Matrix<float, -1, 1> >; Func = Eigen::internal::assign_op<double, float>][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:797:41:[m[K   required from ‘[01m[KDerived& Eigen::PlainObjectBase<Derived>::_set_noalias(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseNullaryOp<Eigen::internal::linspaced_op<float>, Eigen::Matrix<float, -1, 1> >; Derived = Eigen::Matrix<double, 1080, 1, 0, 1080, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:594:19:[m[K   required from ‘[01m[KEigen::PlainObjectBase<Derived>::PlainObjectBase(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseNullaryOp<Eigen::internal::linspaced_op<float>, Eigen::Matrix<float, -1, 1> >; Derived = Eigen::Matrix<double, 1080, 1, 0, 1080, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Matrix.h:423:29:[m[K   required from ‘[01m[KEigen::Matrix<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Matrix(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseNullaryOp<Eigen::internal::linspaced_op<float>, Eigen::Matrix<float, -1, 1> >; _Scalar = double; int _Rows = 1080; int _Cols = 1; int _Options = 0; int _MaxRows = 1080; int _MaxCols = 1][m[K’
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:30:3:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:851:96:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_MIXED_DIFFERENT_NUMERIC_TYPES__YOU_NEED_TO_USE_THE_CAST_METHOD_OF_MATRIXBASE_TO_CAST_NUMERIC_TYPES_EXPLICITLY
+  851 |   EIGEN_STATIC_ASSERT([01;31m[K(Eigen::internal::has_ReturnType<ScalarBinaryOpTraits<LHS, RHS,BINOP> >::value)[m[K, \
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+      |                                                      [01;36m[K^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:888:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K’
+  888 |   [01;36m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K(Func,typename ActualDstTypeCleaned::Scalar,typename Src::Scalar);
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:851:96:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<double, float, Eigen::internal::assign_op<double, float> > >::value[m[K’ evaluates to false
+  851 |   EIGEN_STATIC_ASSERT([01;36m[K(Eigen::internal::has_ReturnType<ScalarBinaryOpTraits<LHS, RHS,BINOP> >::value)[m[K, \
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+      |                                                      [01;36m[K^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:888:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K’
+  888 |   [01;36m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K(Func,typename ActualDstTypeCleaned::Scalar,typename Src::Scalar);
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h: In instantiation of ‘[01m[Kvoid Eigen::internal::call_assignment_no_alias(Dst&, const Src&, const Func&) [with Dst = Eigen::Array<float, -1, 1>; Src = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, 1080, 1, 0, 1080, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_cos_op<double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, 1080, 1, 0, 1080, 1> > > >; Func = Eigen::internal::assign_op<float, double>][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:797:41:[m[K   required from ‘[01m[KDerived& Eigen::PlainObjectBase<Derived>::_set_noalias(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, 1080, 1, 0, 1080, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_cos_op<double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, 1080, 1, 0, 1080, 1> > > >; Derived = Eigen::Array<float, -1, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:594:19:[m[K   required from ‘[01m[KEigen::PlainObjectBase<Derived>::PlainObjectBase(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, 1080, 1, 0, 1080, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_cos_op<double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, 1080, 1, 0, 1080, 1> > > >; Derived = Eigen::Array<float, -1, 1>][m[K’
+[01m[K/usr/include/eigen3/Eigen/src/Core/Array.h:288:29:[m[K   required from ‘[01m[KEigen::Array<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::Array(const Eigen::EigenBase<OtherDerived>&, typename Eigen::internal::enable_if<std::is_convertible<typename OtherDerived::Scalar, typename Eigen::internal::traits<Eigen::Array<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols> >::Scalar>::value, Eigen::Array<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::PrivateType>::type) [with OtherDerived = Eigen::CwiseBinaryOp<Eigen::internal::scalar_product_op<double, double>, const Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, const Eigen::Array<double, 1080, 1, 0, 1080, 1> >, const Eigen::CwiseUnaryOp<Eigen::internal::scalar_cos_op<double>, const Eigen::ArrayWrapper<Eigen::Matrix<double, 1080, 1, 0, 1080, 1> > > >; _Scalar = float; int _Rows = -1; int _Cols = 1; int _Options = 0; int _MaxRows = -1; int _MaxCols = 1; typename Eigen::internal::enable_if<std::is_convertible<typename OtherDerived::Scalar, typename Eigen::internal::traits<Eigen::Array<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols> >::Scalar>::value, Eigen::Array<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols>::PrivateType>::type = Eigen::Array<float, -1, 1>::PrivateType; typename Eigen::internal::traits<Eigen::Array<_Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols> >::Scalar = float; typename OtherDerived::Scalar = double][m[K’
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:32:69:[m[K   required from here
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:851:96:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: YOU_MIXED_DIFFERENT_NUMERIC_TYPES__YOU_NEED_TO_USE_THE_CAST_METHOD_OF_MATRIXBASE_TO_CAST_NUMERIC_TYPES_EXPLICITLY
+  851 |   EIGEN_STATIC_ASSERT([01;31m[K(Eigen::internal::has_ReturnType<ScalarBinaryOpTraits<LHS, RHS,BINOP> >::value)[m[K, \
+      |                       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+      |                                                      [01;36m[K^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:888:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K’
+  888 |   [01;36m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K(Func,typename ActualDstTypeCleaned::Scalar,typename Src::Scalar);
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:851:96:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::has_ReturnType<Eigen::ScalarBinaryOpTraits<float, double, Eigen::internal::assign_op<float, double> > >::value[m[K’ evaluates to false
+  851 |   EIGEN_STATIC_ASSERT([01;36m[K(Eigen::internal::has_ReturnType<ScalarBinaryOpTraits<LHS, RHS,BINOP> >::value)[m[K, \
+      |                       [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:33:54:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KEIGEN_STATIC_ASSERT[m[K’
+   33 |     #define EIGEN_STATIC_ASSERT(X,MSG) static_assert([01;36m[KX[m[K,#MSG);
+      |                                                      [01;36m[K^[m[K
+[01m[K/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:888:3:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K’
+  888 |   [01;36m[KEIGEN_CHECK_BINARY_COMPATIBILIY[m[K(Func,typename ActualDstTypeCleaned::Scalar,typename Src::Scalar);
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:76: CMakeFiles/safety_node.dir/src/safety_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

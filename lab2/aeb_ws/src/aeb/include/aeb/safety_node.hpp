@@ -24,16 +24,23 @@ private:
 	rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_subscription_;
 	rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscription_;
 	rclcpp::Publisher<ackermann_msgs::msg::AckermannDriveStamped>::SharedPtr publisher_;
-	
-	static const size_t BEAM_COUNT = 1080;
+	static constexpr double EPSILON = 0.0001f;	
+	static constexpr size_t BEAM_COUNT = 1080;
 	double speed_;
 	double heading_;
-	Eigen::Vector<double, BEAM_COUNT> projected_range_rates_;
+	Eigen::ArrayXf ttc_map_;	
 };
 
 }
 
 #endif
+
+
+
+
+
+
+
 
 
 

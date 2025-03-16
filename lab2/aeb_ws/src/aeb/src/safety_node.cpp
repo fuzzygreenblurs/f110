@@ -18,18 +18,20 @@ namespace aeb {
 	}
 
 	void SafetyNode::ingest_scan(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
-		Eigen::VectorXd relative_angles(msg->ranges.size());
-		Eigen::VectorXd range_rates(msg->ranges.size());
-		
-		relative_angles = Eigen::VectorXd::LinSpaced(
-			msg->ranges.size(),
+		Eigen::Map<const Eigen::VectorXf> ranges(
+			msg->ranges.data(),
+			msg->ranges.size()
+		);
+
+		Eigen::VectorXf relative_angles = Eigen::VectorXf::LinSpaced(
+			msg->ranges.size(),	
 			msg->angle_min,
-			msg->angle_min + (msg->angle_increment * (msg->ranges.size() - 1)) - heading_
+			msg->angle_min + (msg->angle_increment * (msg->ranges.size() - 1)) - heading_ 
 		);
 		
-		range_rates = speed_ * relative_angles.array().cos(); 
-
-		RCLCPP_INFO(this->get_logger(), "scan.angle_min: %fi", msg->angle_min);
+		Eigen::ArrayXf range_rates = speed_ * relative_angles.array().cos(); 
+		
+		ttc_map_ = ranges.array() / (-range_rates.max(0.0f) + EPSILON);
 	}
 
 	void SafetyNode::ingest_odom(const nav_msgs::msg::Odometry::SharedPtr msg) {
