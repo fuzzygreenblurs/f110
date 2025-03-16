@@ -1,0 +1,55 @@
+[0.006s] Invoking command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb
+[0.046s] -- The C compiler identification is GNU 11.4.0
+[0.083s] -- The CXX compiler identification is GNU 11.4.0
+[0.088s] -- Detecting C compiler ABI info
+[0.126s] -- Detecting C compiler ABI info - done
+[0.131s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.131s] -- Detecting C compile features
+[0.131s] -- Detecting C compile features - done
+[0.133s] -- Detecting CXX compiler ABI info
+[0.178s] -- Detecting CXX compiler ABI info - done
+[0.183s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.183s] -- Detecting CXX compile features
+[0.184s] -- Detecting CXX compile features - done
+[0.186s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.270s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.305s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.320s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.349s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.352s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.357s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.366s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.377s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.406s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.407s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.452s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.470s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.497s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.502s] -- Looking for pthread.h
+[0.538s] -- Looking for pthread.h - found
+[0.538s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.578s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.579s] -- Found Threads: TRUE  
+[0.615s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.637s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.650s] -- Found ackermann_msgs: 2.0.2 (/opt/ros/humble/share/ackermann_msgs/cmake)
+[0.666s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[0.666s]   By not providing "FindEigen.cmake" in CMAKE_MODULE_PATH this project has
+[0.667s]   asked CMake to find a package configuration file provided by "Eigen", but
+[0.667s]   CMake did not find one.
+[0.667s] 
+[0.667s]   Could not find a package configuration file provided by "Eigen" with any of
+[0.667s]   the following names:
+[0.667s] 
+[0.667s]     EigenConfig.cmake
+[0.667s]     eigen-config.cmake
+[0.667s] 
+[0.667s]   Add the installation prefix of "Eigen" to CMAKE_PREFIX_PATH or set
+[0.667s]   "Eigen_DIR" to a directory containing one of the above files.  If "Eigen"
+[0.667s]   provides a separate development package or SDK, be sure it has been
+[0.667s]   installed.
+[0.667s] 
+[0.667s] [0m
+[0.667s] -- Configuring incomplete, errors occurred!
+[0.667s] See also "/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb/CMakeFiles/CMakeOutput.log".
+[0.672s] Invoked command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/install/aeb

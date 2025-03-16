@@ -50,6 +50,7 @@ namespace aeb {
 		double qy = msg->pose.pose.orientation.y;
 		double qz = msg->pose.pose.orientation.z;
 
+
 		double yaw = std::atan2(
 			2.0 * ((qw * qx) + (qy * qz)),
 			1.0 - (2.0 * (qx * qx) + (qy * qy))

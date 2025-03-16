@@ -2,6 +2,7 @@
 #define SAFETY_NODE_HPP
 
 #include <vector>
+#include <Eigen/Dense> 
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "nav_msgs/msg/odometry.hpp"
@@ -23,14 +24,16 @@ private:
 	rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr scan_subscription_;
 	rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscription_;
 	rclcpp::Publisher<ackermann_msgs::msg::AckermannDriveStamped>::SharedPtr publisher_;
-
+	
+	const size_t BEAM_COUNT 1080;
 	double speed_;
 	double heading_;
-	std::vector<double> projected_range_rates_;
-}
+	Eigen::Vector<double, BEAM_COUNT> projected_range_rates_;
+};
 
 }
 
 #endif
+
 
 
