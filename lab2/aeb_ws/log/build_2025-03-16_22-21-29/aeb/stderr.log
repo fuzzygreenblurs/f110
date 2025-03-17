@@ -1,0 +1,63 @@
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:214[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:[m[K In function ‘[01m[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid* memcpy(void*, const void*, size_t)[m[K’ copying an object of non-trivial type ‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} from an array of ‘[01m[Kconst int8_t[m[K’ {aka ‘[01m[Kconst signed char[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess-Wclass-memaccess]8;;[m[K]
+ 1671 |   [01;35m[Kmemcpy(&res, from, sizeof(Packet4c))[m[K;
+      |   [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:172[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} declared here
+  159 | struct [01;36m[Keigen_packet_wrapper[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:214[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:[m[K In function ‘[01m[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char][m[K’:
+[01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid* memcpy(void*, const void*, size_t)[m[K’ copying an object of non-trivial type ‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} from an array of ‘[01m[Kconst int8_t[m[K’ {aka ‘[01m[Kconst signed char[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess-Wclass-memaccess]8;;[m[K]
+ 1716 |   [01;35m[Kmemcpy(&res, from, sizeof(Packet4c))[m[K;
+      |   [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:172[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:5[m[K,
+                 from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} declared here
+  159 | struct [01;36m[Keigen_packet_wrapper[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:1[m[K:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:[m[K At global scope:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:36:45:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   36 |         static constexpr char* SCAN_TOPIC = [01;35m[K"/scan"[m[K;
+      |                                             [01;35m[K^~~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:37:49:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   37 |         static constexpr char* ODOMETRY_TOPIC = [01;35m[K"/ego_racecar/odom"[m[K;
+      |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:38:47:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+   38 |         static constexpr char* FUNNEL_TOPIC = [01;35m[K"/drive_funnel"[m[K;
+      |                                               [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid AEB::SafetyNode::is_within_threshold()[m[K’:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:61:44:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   61 |                 return [01;31m[Kttc_map_.minCoeff() <= AEB_MIN_RADIUS[m[K;
+      |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In member function ‘[01m[Kvoid AEB::SafetyNode::brake()[m[K’:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:66:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kis_within_threshold[m[K’
+   66 |                 if [01;31m[Ki[m[K[32m[Ks_within_threshold[m[K() {
+      |                    [01;31m[K^[m[K[32m[K~~~~~~~~~~~~~~~~~~[m[K
+      |                    [32m[K([m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:78:70:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[Ksafety_node[m[K’
+   78 |         AEB::SafetyNode::SharedPtr std::make_shared<AEB::SafetyNode> [01;31m[Ksafety_node[m[K;
+      |                                                                      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:79:15:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K.[m[K’ token
+   79 |         rclcpp[01;31m[K.[m[Kspin(safety_node->brake());
+      |               [01;31m[K^[m[K
+[01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:79:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ksafety_node[m[K’ was not declared in this scope
+   79 |         rclcpp.spin([01;31m[Ksafety_node[m[K->brake());
+      |                     [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:76: CMakeFiles/safety_node.dir/src/safety_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

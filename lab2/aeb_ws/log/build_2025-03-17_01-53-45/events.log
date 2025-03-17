@@ -1,0 +1,127 @@
+[0.000000] (-) TimerEvent: {}
+[0.000083] (aeb) JobQueued: {'identifier': 'aeb', 'dependencies': OrderedDict()}
+[0.000098] (aeb) JobStarted: {'identifier': 'aeb'}
+[0.003616] (aeb) JobProgress: {'identifier': 'aeb', 'progress': 'cmake'}
+[0.004518] (aeb) JobProgress: {'identifier': 'aeb', 'progress': 'build'}
+[0.004546] (aeb) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb', '--', '-j6', '-l6'], 'cwd': '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akhilsankar'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akhilsankar'), ('OLDPWD', '/home/akhilsankar/workspace/f110/labs'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1592'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2391'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akhilsankar'), ('JOURNAL_STREAM', '8:25530'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'akhilsankar'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/akhilsankar/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/slambox-01:@/tmp/.ICE-unix/1675,unix/slambox-01:/tmp/.ICE-unix/1675'), ('INVOCATION_ID', 'b6039b223bf946ebb8cfb763f2130175'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8PMN32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:a780096d-d165-4909-aa27-a1da9c8574fe'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.028691] (aeb) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target safety_node\x1b[0m\n'}
+[0.039724] (aeb) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o\x1b[0m\n'}
+[0.104554] (-) TimerEvent: {}
+[0.208895] (-) TimerEvent: {}
+[0.314144] (-) TimerEvent: {}
+[0.415812] (-) TimerEvent: {}
+[0.516717] (-) TimerEvent: {}
+[0.572982] (aeb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[0.573113] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[0.573144] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:4\x1b[m\x1b[K,\n'}
+[0.573171] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:2\x1b[m\x1b[K:\n'}
+[0.573196] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.573224] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.573252] (aeb) StderrLine: {'line': b' 1671 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[0.573277] (aeb) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.573301] (aeb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[0.573326] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[0.573350] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:4\x1b[m\x1b[K,\n'}
+[0.573374] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:2\x1b[m\x1b[K:\n'}
+[0.573397] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[0.573428] (aeb) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[0.573452] (aeb) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.573591] (aeb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:214\x1b[m\x1b[K,\n'}
+[0.573627] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[0.573651] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:4\x1b[m\x1b[K,\n'}
+[0.573675] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:2\x1b[m\x1b[K:\n'}
+[0.573699] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.573725] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid* memcpy(void*, const void*, size_t)\x1b[m\x1b[K\xe2\x80\x99 copying an object of non-trivial type \xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} from an array of \xe2\x80\x98\x1b[01m\x1b[Kconst int8_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst signed char\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess\x07-Wclass-memaccess\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[0.573754] (aeb) StderrLine: {'line': b' 1716 |   \x1b[01;35m\x1b[Kmemcpy(&res, from, sizeof(Packet4c))\x1b[m\x1b[K;\n'}
+[0.573778] (aeb) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.573805] (aeb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:172\x1b[m\x1b[K,\n'}
+[0.573829] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[0.573853] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:4\x1b[m\x1b[K,\n'}
+[0.573877] (aeb) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:2\x1b[m\x1b[K:\n'}
+[0.573900] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::internal::Packet4c\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>\x1b[m\x1b[K\xe2\x80\x99} declared here\n'}
+[0.573929] (aeb) StderrLine: {'line': b'  159 | struct \x1b[01;36m\x1b[Keigen_packet_wrapper\x1b[m\x1b[K\n'}
+[0.573953] (aeb) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[0.621850] (-) TimerEvent: {}
+[0.725728] (-) TimerEvent: {}
+[0.827715] (-) TimerEvent: {}
+[0.932979] (-) TimerEvent: {}
+[1.033730] (-) TimerEvent: {}
+[1.139030] (-) TimerEvent: {}
+[1.242750] (-) TimerEvent: {}
+[1.348044] (-) TimerEvent: {}
+[1.452918] (-) TimerEvent: {}
+[1.558224] (-) TimerEvent: {}
+[1.663544] (-) TimerEvent: {}
+[1.764086] (-) TimerEvent: {}
+[1.846226] (aeb) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:2\x1b[m\x1b[K:\n'}
+[1.846344] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:\x1b[m\x1b[K At global scope:\n'}
+[1.846386] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:34:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.846419] (aeb) StderrLine: {'line': b'   34 |         static constexpr char* SCAN_TOPIC = \x1b[01;35m\x1b[K"/scan"\x1b[m\x1b[K;\n'}
+[1.846444] (aeb) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[1.846468] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:35:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.846494] (aeb) StderrLine: {'line': b'   35 |         static constexpr char* ODOMETRY_TOPIC = \x1b[01;35m\x1b[K"/ego_racecar/odom"\x1b[m\x1b[K;\n'}
+[1.846518] (aeb) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.846543] (aeb) StderrLine: {'line': b'\x1b[01m\x1b[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:36:47:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++ forbids converting a string constant to \xe2\x80\x98\x1b[01m\x1b[Kchar*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings\x07-Wwrite-strings\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.846570] (aeb) StderrLine: {'line': b'   36 |         static constexpr char* FUNNEL_TOPIC = \x1b[01;35m\x1b[K"/drive_funnel"\x1b[m\x1b[K;\n'}
+[1.846593] (aeb) StderrLine: {'line': b'      |                                               \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.865148] (-) TimerEvent: {}
+[1.965722] (-) TimerEvent: {}
+[2.070990] (-) TimerEvent: {}
+[2.176288] (-) TimerEvent: {}
+[2.277233] (-) TimerEvent: {}
+[2.377751] (-) TimerEvent: {}
+[2.478756] (-) TimerEvent: {}
+[2.584028] (-) TimerEvent: {}
+[2.689320] (-) TimerEvent: {}
+[2.793540] (-) TimerEvent: {}
+[2.898510] (-) TimerEvent: {}
+[3.003809] (-) TimerEvent: {}
+[3.109126] (-) TimerEvent: {}
+[3.214417] (-) TimerEvent: {}
+[3.317754] (-) TimerEvent: {}
+[3.423053] (-) TimerEvent: {}
+[3.523473] (-) TimerEvent: {}
+[3.627662] (-) TimerEvent: {}
+[3.732938] (-) TimerEvent: {}
+[3.835993] (-) TimerEvent: {}
+[3.940195] (-) TimerEvent: {}
+[4.044152] (-) TimerEvent: {}
+[4.149432] (-) TimerEvent: {}
+[4.254706] (-) TimerEvent: {}
+[4.358251] (-) TimerEvent: {}
+[4.462895] (-) TimerEvent: {}
+[4.565142] (-) TimerEvent: {}
+[4.670384] (-) TimerEvent: {}
+[4.770828] (-) TimerEvent: {}
+[4.876113] (-) TimerEvent: {}
+[4.981355] (-) TimerEvent: {}
+[5.086631] (-) TimerEvent: {}
+[5.190169] (-) TimerEvent: {}
+[5.293609] (-) TimerEvent: {}
+[5.398858] (-) TimerEvent: {}
+[5.504145] (-) TimerEvent: {}
+[5.609435] (-) TimerEvent: {}
+[5.714718] (-) TimerEvent: {}
+[5.817730] (-) TimerEvent: {}
+[5.918050] (-) TimerEvent: {}
+[6.018455] (-) TimerEvent: {}
+[6.123735] (-) TimerEvent: {}
+[6.229019] (-) TimerEvent: {}
+[6.334262] (-) TimerEvent: {}
+[6.435984] (-) TimerEvent: {}
+[6.538893] (-) TimerEvent: {}
+[6.641719] (-) TimerEvent: {}
+[6.682922] (aeb) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable safety_node\x1b[0m\n'}
+[6.741838] (-) TimerEvent: {}
+[6.847079] (-) TimerEvent: {}
+[6.952338] (-) TimerEvent: {}
+[7.003643] (aeb) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/safety_node.dir/src/safety_node.cpp.o: in function `AEB::SafetyNode::ingest_odom(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >)':\n"}
+[7.003753] (aeb) StderrLine: {'line': b"safety_node.cpp:(.text+0x874): undefined reference to `AEB::SafetyNode::convert_to_yaw(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void> > >)'\n"}
+[7.057461] (-) TimerEvent: {}
+[7.060381] (aeb) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[7.061266] (aeb) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:191: safety_node] Error 1\n'}
+[7.061439] (aeb) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2\n'}
+[7.061600] (aeb) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.063104] (aeb) CommandEnded: {'returncode': 2}
+[7.068392] (aeb) JobEnded: {'identifier': 'aeb', 'rc': 2}
+[7.078900] (-) EventReactorShutdown: {}

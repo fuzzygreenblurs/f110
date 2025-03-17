@@ -1,3 +1,4 @@
+#include <chrono>
 #include "aeb/safety_node.hpp"
 
 using std::placeholders::_1;
@@ -15,7 +16,13 @@ namespace AEB {
 		);
 
 		publisher_ = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>(FUNNEL_TOPIC, 10);
-	}
+
+
+		auto timer_ = this->create_wall_timer(
+			std::chrono::milliseconds(5),
+			std::bind(&SafetyNode::brake, this)
+		);
+	} 
 
 	void SafetyNode::ingest_scan(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
 		Eigen::Map<const Eigen::VectorXf> ranges(
@@ -57,20 +64,19 @@ namespace AEB {
 		return yaw;
 	}
 
-	void SafetyNode::is_within_threshold() {
-		if(ttc_map_.minCoeff() <= AEB_MIN_RADIUS) {
-			brake();
-		}
+	bool SafetyNode::is_within_threshold() {
+		return ttc_map_.minCoeff() <= AEB_MIN_RADIUS; 
 	}
 
 	void SafetyNode::brake() {
 		// publish AckermannDriveStamped().velocity = 0.0 to mux at "drive_funnel"
+		if (is_within_threshold()) {
+			auto msg = ackermann_msgs::msg::AckermannDriveStamped();
+			msg.drive.speed = 0.0;
+			publisher_->publish(msg);
 
-		auto msg = ackermann_msgs::msg::AckermannDriveStamped();
-		msg.drive.speed = 0.0;
-		publisher_->publish(msg);
-
-		RCLCPP_INFO(this->get_logger(), "AEB::CriticalThresholdDetected : trigger brake");
+			RCLCPP_INFO(this->get_logger(), "AEB::CriticalThresholdDetected : trigger brake");
+		}
 	}
 }
 

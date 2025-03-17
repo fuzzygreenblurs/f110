@@ -1,0 +1,52 @@
+[0.007s] Invoking command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb -- -j6 -l6
+[0.038s] [35m[1mConsolidate compiler generated dependencies of target safety_node[0m
+[0.053s] [ 50%] [32mBuilding CXX object CMakeFiles/safety_node.dir/src/safety_node.cpp.o[0m
+[0.689s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:214[m[K,
+[0.689s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[0.689s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:4[m[K,
+[0.689s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:2[m[K:
+[0.689s] [01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:[m[K In function ‘[01m[KPacket Eigen::internal::pload(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char][m[K’:
+[0.689s] [01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1671:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid* memcpy(void*, const void*, size_t)[m[K’ copying an object of non-trivial type ‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} from an array of ‘[01m[Kconst int8_t[m[K’ {aka ‘[01m[Kconst signed char[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess-Wclass-memaccess]8;;[m[K]
+[0.689s]  1671 |   [01;35m[Kmemcpy(&res, from, sizeof(Packet4c))[m[K;
+[0.689s]       |   [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.689s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:172[m[K,
+[0.689s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[0.689s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:4[m[K,
+[0.689s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:2[m[K:
+[0.689s] [01m[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} declared here
+[0.689s]   159 | struct [01;36m[Keigen_packet_wrapper[m[K
+[0.689s]       |        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.690s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:214[m[K,
+[0.690s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[0.690s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:4[m[K,
+[0.690s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:2[m[K:
+[0.690s] [01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:[m[K In function ‘[01m[KPacket Eigen::internal::ploadu(const typename Eigen::internal::unpacket_traits<T>::type*) [with Packet = Eigen::internal::eigen_packet_wrapper<int, 2>; typename Eigen::internal::unpacket_traits<T>::type = signed char][m[K’:
+[0.690s] [01m[K/usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h:1716:9:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid* memcpy(void*, const void*, size_t)[m[K’ copying an object of non-trivial type ‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} from an array of ‘[01m[Kconst int8_t[m[K’ {aka ‘[01m[Kconst signed char[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wclass-memaccess-Wclass-memaccess]8;;[m[K]
+[0.690s]  1716 |   [01;35m[Kmemcpy(&res, from, sizeof(Packet4c))[m[K;
+[0.690s]       |   [01;35m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.690s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:172[m[K,
+[0.690s]                  from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+[0.690s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:4[m[K,
+[0.690s]                  from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:2[m[K:
+[0.690s] [01m[K/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:159:8:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::internal::Packet4c[m[K’ {aka ‘[01m[Kstruct Eigen::internal::eigen_packet_wrapper<int, 2>[m[K’} declared here
+[0.690s]   159 | struct [01;36m[Keigen_packet_wrapper[m[K
+[0.690s]       |        [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.187s] In file included from [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:2[m[K:
+[2.187s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:[m[K At global scope:
+[2.187s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:35:45:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[2.187s]    35 |         static constexpr char* SCAN_TOPIC = [01;35m[K"/scan"[m[K;
+[2.187s]       |                                             [01;35m[K^~~~~~~[m[K
+[2.187s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:36:49:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[2.187s]    36 |         static constexpr char* ODOMETRY_TOPIC = [01;35m[K"/ego_racecar/odom"[m[K;
+[2.187s]       |                                                 [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.187s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/include/aeb/safety_node.hpp:37:47:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wwrite-strings-Wwrite-strings]8;;[m[K]
+[2.187s]    37 |         static constexpr char* FUNNEL_TOPIC = [01;35m[K"/drive_funnel"[m[K;
+[2.187s]       |                                               [01;35m[K^~~~~~~~~~~~~~~[m[K
+[2.261s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.261s] [01m[K/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/src/aeb/src/safety_node.cpp:81:17:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::TimeBase[m[K’ has not been declared
+[2.261s]    81 |         rclcpp::[01;31m[KTimeBase[m[K::SharedPtr timer = safety_node->create_wall_timer(
+[2.261s]       |                 [01;31m[K^~~~~~~~[m[K
+[4.431s] gmake[2]: *** [CMakeFiles/safety_node.dir/build.make:76: CMakeFiles/safety_node.dir/src/safety_node.cpp.o] Error 1
+[4.431s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/safety_node.dir/all] Error 2
+[4.431s] gmake: *** [Makefile:146: all] Error 2
+[4.433s] Invoked command in '/home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akhilsankar/workspace/f110/labs/lab2/aeb_ws/build/aeb -- -j6 -l6
